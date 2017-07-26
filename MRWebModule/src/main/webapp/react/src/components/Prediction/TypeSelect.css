@@ -1,0 +1,35 @@
+/*
+ * grid
+ */
+/*
+ * Fonts
+ */
+/*
+ * Colors
+ */
+html, body, h1, h2, h3, h4, h5, h6, hr, li, ul, p, a, img, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Avenir", "Pingfang SC", "Open Sans", "Lantinghei SC", "Microsoft Yahei Light", "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 200;
+  list-style: none; }
+
+* {
+  position: relative; }
+
+.select :global .ant-tag {
+  margin: 5px 8px;
+  padding: 2px 10px;
+  border: none;
+  border-radius: 0;
+  height: auto;
+  color: #808080;
+  font-size: 14px; }
+  .select :global .ant-tag:hover {
+    color: #FFF; }
+  .select :global .ant-tag.ant-tag-checkable-checked {
+    background-color: #AED7D8;
+    color: #FFF; }
+
+/*# sourceMappingURL=TypeSelect.css.map */

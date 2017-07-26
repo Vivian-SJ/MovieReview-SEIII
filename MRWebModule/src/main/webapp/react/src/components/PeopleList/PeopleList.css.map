@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,KAAM;EACJ,aAAa,EAAE,IAAI",
+"sources": ["PeopleList.scss"],
+"names": [],
+"file": "PeopleList.css"
+}

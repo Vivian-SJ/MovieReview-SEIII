@@ -1,0 +1,182 @@
+@import "../../assets/scss/mixin";
+@import "../../assets/scss/variables";
+@import "../../assets/scss/base";
+
+.card {
+  padding: 10px;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  .text {
+    h3 {
+      color: $theme-font-color-dark;
+      font-size: 18px;
+      font-weight: $font-weight-medium;
+    }
+  }
+  :global {
+    .ant-card-body {
+      padding: 0;
+    }
+  }
+
+}
+
+.card_mini {
+  max-width: 240px;
+  .img_wrapper {
+    height: 200px;
+  }
+
+  .text {
+    margin-top: 5px;
+    .title {
+      font-size: 15px;
+      height: 32px;
+      line-height: 16px;
+      @include line-wrap(2);
+    }
+  }
+
+  .score {
+    margin-left: 10px;
+    font-size: 16px;
+    line-height: 16px;
+    vertical-align: baseline;
+  }
+  :global {
+    .ant-rate {
+      font-size: 17px;
+    }
+  }
+}
+
+.card_small {
+  max-width: 240px;
+  .img_wrapper {
+    height: 280px;
+  }
+
+  .text {
+    margin-top: 5px;
+  }
+  .title {
+    height: 50px;
+    @include line-wrap(2);
+  }
+}
+
+.card_large {
+  max-width: 500px;
+  .img_wrapper {
+    position: absolute;
+    display: inline-block;
+    width: 120px;
+    height: 180px;
+  }
+  .text {
+    vertical-align: top;
+    margin-left: 130px;
+    height: 100%;
+  }
+  .tags {
+    margin-top: 5px;
+  }
+  :global {
+    .ant-card-body {
+      height: 180px;
+    }
+  }
+}
+
+.img {
+  @include cover-img();
+}
+
+.rate {
+  margin-right: 10px;
+  :global {
+    .ant-rate-star {
+      margin-right: 5px;
+      color: $gray-color-ultra-light;
+      cursor: default;
+    }
+    .ant-rate-star-half .ant-rate-star-first, .ant-rate-star-full .ant-rate-star-second {
+      z-index: 1;
+      color: $color-5;
+      cursor: default;
+    }
+  }
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+}
+
+.date {
+  color: $gray-color;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.year {
+  color: $gray-color;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.score {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 30px;
+  color: $theme-color-dark;
+  font-size: 18px;
+  font-weight: $font-weight-medium;
+}
+
+.count {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  line-height: 30px;
+  color: $gray-color-light;
+  font-size: 16px;
+}
+
+.tags {
+  :global {
+    .ant-tag {
+      margin-bottom: 10px;
+      padding: 2px 10px;
+      border: none;
+      border-radius: 0;
+      height: auto;
+      background-color: $theme-color-light;
+      color: $theme-color-dark;
+      font-size: 16px;
+      cursor: default;
+    }
+  }
+}
+
+.triangle {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 50px 50px 0 0;
+  border-color: $theme-color-dark transparent transparent transparent;
+  //background-color: $theme-color-dark;
+  span {
+    position: absolute;
+    top: -30px;
+    left: 12px;
+    color: $white-color;
+    font-size: 16px;
+    font-weight: $font-weight-medium;
+    @include transform(translate(-50%, -50%));
+  }
+}

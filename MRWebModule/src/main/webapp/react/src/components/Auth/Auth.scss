@@ -1,0 +1,81 @@
+@import "../../assets/scss/mixin";
+@import "../../assets/scss/variables";
+@import "../../assets/scss/base";
+
+.tab_wrapper {
+
+  :global {
+    .ant-tabs-bar {
+      border-bottom: none;
+      margin-bottom: 20px;
+      .ant-tabs-nav .ant-tabs-tab {
+        color: $white-color;
+        font-size: 16px;
+        font-weight: $font-weight-medium;
+      }
+    }
+    .ant-tabs-ink-bar {
+      background-color: $white-color;
+    }
+  }
+}
+
+.dark {
+
+  :global {
+    .ant-tabs-bar {
+      .ant-tabs-nav .ant-tabs-tab {
+        color: $theme-color;
+      }
+    }
+    .ant-tabs-ink-bar {
+      background-color: $theme-color;
+    }
+  }
+
+  .login_remember span {
+    color: $theme-font-color-dark;
+  }
+
+  .login_forgot {
+    color: $theme-font-color-dark;
+  }
+
+}
+
+.form {
+  input {
+    height: 40px;
+    color: $gray-color-dark;
+    border-radius: 0;
+    font-size: 14px;
+  }
+}
+
+.login_remember span {
+  color: $white-color;
+}
+
+.login_forgot {
+  float: right;
+  color: $white-color;
+}
+
+.submit_button {
+  width: 100%;
+  height: 40px;
+  border-radius: 0;
+}
+
+.auth {
+  :global {
+    .has-error .ant-input, .has-error .ant-input:hover {
+      color: $color-2;
+      border-color: $color-2;
+    }
+
+    .has-error .ant-form-explain, .has-error .ant-form-split {
+      color: $color-2;
+    }
+  }
+}

@@ -1,0 +1,76 @@
+/*
+ * grid
+ */
+/*
+ * Fonts
+ */
+/*
+ * Colors
+ */
+html, body, h1, h2, h3, h4, h5, h6, hr, li, ul, p, a, img, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Avenir", "Pingfang SC", "Open Sans", "Lantinghei SC", "Microsoft Yahei Light", "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 200;
+  list-style: none; }
+
+* {
+  position: relative; }
+
+.no_movies {
+  color: #9EA8A9;
+  font-size: 16px; }
+
+.rate_wrapper {
+  display: block;
+  text-align: center; }
+
+.rate :global .ant-rate-star {
+  margin-right: 5px;
+  color: #EEEEEE;
+  cursor: default; }
+.rate :global .ant-rate-star-half .ant-rate-star-first, .rate :global .ant-rate-star-full .ant-rate-star-second {
+  z-index: 1;
+  color: #F8D76E;
+  cursor: default; }
+
+.score {
+  vertical-align: middle;
+  margin-left: 10px;
+  color: #AED7D8;
+  font-size: 16px;
+  font-weight: 400; }
+
+.checkbox {
+  font-size: 14px; }
+
+.tag_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.evaluate :global .ant-modal-title {
+  color: #6E7979; }
+.evaluate :global .ant-modal-body {
+  padding: 40px; }
+.evaluate :global .ant-form-item-label label {
+  color: #9EA8A9; }
+.evaluate :global .ant-tag {
+  margin: 5px 8px;
+  padding: 2px 10px;
+  border-color: #EFF6F6;
+  border-radius: 0;
+  height: auto;
+  color: #9EA8A9;
+  font-size: 14px; }
+  .evaluate :global .ant-tag:hover {
+    border-color: #CAE1E2;
+    background-color: #CAE1E2;
+    color: #FFF; }
+  .evaluate :global .ant-tag.ant-tag-checkable-checked {
+    border-color: #AED7D8;
+    background-color: #AED7D8;
+    color: #FFF; }
+
+/*# sourceMappingURL=MovieEvaluate.css.map */

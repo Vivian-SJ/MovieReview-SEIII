@@ -1,0 +1,41 @@
+{
+  "/api/": "/",
+
+
+  "/user/:userId/collect?:request": "/movies",
+  "/user/:userId/evaluate?:request": "/movies",
+
+  "/user/recommend?:request": "/movie",
+  "/movie/latest?:request": "/movie",
+
+  "/user/survey": "/success",
+  "/user/movie/:movieId/evaluate": "/success",
+  "/user/movie/:movieId/collect": "/success",
+
+  "/user/movie/:movieId": "/umstatus/:movieId",
+  "/user/signup": "/success",
+  "/user/signin": "/signin",
+
+  "/user/:userId/following": "/users",
+  "/user/:userId/follower": "/users",
+
+  "/user/:userId/follow": "/success",
+  "/user/:userId/status": "/ustatus/:userId",
+
+  "/user/info/:id": "/user/1",
+  "/user": "/user/1",
+  "/user/1s": "/users",
+  "/user/1/:id": "/user/:id",
+
+  "/movie/search?:request":"/movies",
+
+  "/movies/:movieId": "/movie/:movieId",
+  "/movie/:movieId/similar": "/movie",
+
+  "/director/search?:request": "/directors",
+  "/director/:id": "/director/:id",
+
+  "/actor/search?:request": "/actors",
+  "/actor/:id": "/actor/:id"
+
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import component.sequencebutton.SequenceButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="1000.0" spacing="20.0" styleClass="card" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.componentcontroller.MovieSearchPaneController">
+   <padding>
+      <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+   </padding>
+   <children>
+      <HBox alignment="CENTER" spacing="20.0">
+         <children>
+            <Label styleClass="card-title" text="Movie" />
+            <Pane HBox.hgrow="ALWAYS" />
+            <TextField idmovie="search-text-field" fx:idmovie="searchField" prefWidth="300.0" promptText="Movie name">
+               <font>
+                  <Font name="Avenir Book" size="14.0" />
+               </font>
+            </TextField>
+            <Button fx:idmovie="searchButton" mnemonicParsing="false" onMouseClicked="#clickSearchButton" styleClass="search-button" text="Search" />
+         </children>
+      </HBox>
+      <TilePane fx:idmovie="genrePane" hgap="10.0" prefColumns="10" tileAlignment="TOP_LEFT" vgap="6.0" />
+      <HBox fx:idmovie="sortHBox" spacing="20.0">
+         <children>
+            <SequenceButton fx:idmovie="releaseDateButton" text="Release Date" />
+            <SequenceButton fx:idmovie="averageScoreButton" text="Average Score" />
+         </children>
+      </HBox>
+      <HBox fx:idmovie="keywordHBox" alignment="CENTER_LEFT" spacing="20.0">
+         <children>
+            <Label styleClass="for-label" text="keyword:" />
+            <Label fx:idmovie="keywordLabel" styleClass="keyword-label" text="keyword" />
+            <Label fx:idmovie="clearLabel" alignment="CENTER" contentDisplay="CENTER" onMouseClicked="#clickClearButton" styleClass="clear-keyword-label" text="1" textAlignment="CENTER" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

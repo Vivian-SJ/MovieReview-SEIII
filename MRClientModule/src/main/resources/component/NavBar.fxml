@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import component.navbutton.NavButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="200.0" styleClass="nav-bar" stylesheets="@../css/main.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.componentcontroller.NavBarViewController">
+   <children>
+      <VBox layoutY="436.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="200.0">
+         <children>
+            <NavButton fx:idmovie="movieButton" icon="/uf008" onMouseClicked="#clickMovieButton" text="Movie" />
+            <NavButton fx:idmovie="userButton" icon="/uf007" onMouseClicked="#clickUserButton" text="User" />
+            <NavButton fx:idmovie="statisticButton" icon="/uf080" onMouseClicked="#clickStatisticButton" text="Statistic" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

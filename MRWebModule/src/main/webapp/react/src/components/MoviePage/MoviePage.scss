@@ -1,0 +1,139 @@
+@import "../../assets/scss/mixin";
+@import "../../assets/scss/variables";
+@import "../../assets/scss/base";
+
+.part {
+  margin: 60px 0;
+}
+
+.title {
+  margin-bottom: 20px;
+  @include clear-fix();
+  h3 {
+    float: left;
+    color: $gray-color;
+    font-size: 18px;
+    font-weight: $font-weight-medium;
+  }
+}
+
+.title_right {
+  float: right;
+  margin-top: 3px;
+  color: $theme-color-dark;
+  font-size: 14px;
+  :global {
+    .anticon {
+      margin-left: 6px;
+    }
+  }
+}
+
+.spin {
+  margin: 100px 0;
+  text-align: center;
+}
+
+/* */
+
+.movie_sort {
+  margin-top: 20px;
+}
+
+.recent_search, .search_status {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.search_status {
+  display: flex;
+  justify-content: center;
+}
+
+.status {
+  margin: 0 50px;
+  color: $gray-color;
+  font-size: 16px;
+  font-weight: $font-weight-normal;
+  &.status_active {
+    color: $theme-color-dark;
+  }
+}
+
+.discover_page, .category_page, .search_page {
+  min-height: 500px;
+  :global {
+    .ant-pagination {
+      display: table;
+      margin: 0 auto;
+    }
+
+    .ant-pagination-item, .ant-pagination-prev, .ant-pagination-next {
+      border: none;
+      border-radius: 50%;
+      a {
+        color: $gray-color;
+        font-size: 14px;
+      }
+    }
+    .ant-pagination-item-active {
+      a {
+        color: $white-color;
+      }
+    }
+
+    .ant-pagination-options {
+      input {
+        border: none;
+        border-radius: 0;
+        color: $gray-color-dark;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.review_wrapper {
+  :global {
+    .ant-pagination {
+      display: table;
+      margin: 0 auto;
+    }
+
+    .ant-pagination-item, .ant-pagination-prev, .ant-pagination-next {
+      border: none;
+      border-radius: 50%;
+      a {
+        color: $gray-color;
+        font-size: 14px;
+      }
+    }
+    .ant-pagination-item-active {
+      a {
+        color: $white-color;
+      }
+    }
+
+    .ant-pagination-options {
+      input {
+        border: none;
+        border-radius: 0;
+        color: $gray-color-dark;
+        background-color: $gray-color-white;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.page {
+  padding-top: 40px;
+}
+
+/* Movie */
+
+.storyline {
+  margin: 20px 0;
+  color: $gray-color-dark;
+  font-size: 14px;
+}
